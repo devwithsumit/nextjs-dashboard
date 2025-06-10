@@ -12,11 +12,6 @@ async function listInvoices() {
 
 	return data;
 }
-async function dropTable() {
-  await sql`DROP TABLE invoices`
-  return "Delete invoices successfully"
-}
-
 export async function GET() {
   // return Response.json({
   //   message:
