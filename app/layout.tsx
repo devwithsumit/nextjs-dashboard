@@ -1,11 +1,14 @@
+import '@/app/ui/global.css';
+import { inter } from './ui/fonts';
+import { ChildrenNode } from './lib/definitions';
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode;
-}) {
+}: ChildrenNode) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${inter.className} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }

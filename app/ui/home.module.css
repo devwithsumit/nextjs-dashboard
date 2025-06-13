@@ -1,0 +1,13 @@
+.triangle {
+    height: 0;
+    width: 0;
+    border-bottom: 30px solid black;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+.circle{
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    background-color: black;
+}
