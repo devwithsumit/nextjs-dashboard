@@ -1,5 +1,5 @@
 import React from 'react'
-import { InvoicesTableSkeleton, LatestInvoicesSkeleton } from '../../ui/skeletons';
+import { InvoicesTableSkeleton } from '../../ui/skeletons';
 import { lusitana } from '@/app/ui/fonts';
 const loading = () => {
     return (

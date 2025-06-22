@@ -8,7 +8,6 @@ import { redirect } from 'next/navigation';
 import { AuthError } from 'next-auth';
 import { getUser, signIn } from '@/auth';
 import bcrypt from 'bcrypt';
-import { User } from './definitions';
 
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
 
@@ -187,7 +186,7 @@ export async function registerUser(prevState: UserState, formData: FormData): Pr
         message: 'Failed to Register User !',
     }
 
-    const registeredUser = await sql`
+    await sql`
         INSERT INTO users (name, email, password)
         VALUES (${name.toString()}, ${email.toString()}, ${hashedPassword})
     `
