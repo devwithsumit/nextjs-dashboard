@@ -84,7 +84,7 @@ export default function LoginForm() {
           {/* Add form errors here */}
         </div>
           <div className='text-sm mt-0 ml-2'>
-            Don't have a account,&nbsp;
+            Don&apos;t have a account,&nbsp;
             <Link href={'/register'}>
               <span className='text-blue-500 underline'>Sign up</span>
             </Link>
